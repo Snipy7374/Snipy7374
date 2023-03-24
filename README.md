@@ -15,3 +15,4 @@ Here are some fancy badges representing tools i used/use/am learning:
 
 ## Stats
 
+![Metrics](/github-metrics.svg)
