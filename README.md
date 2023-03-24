@@ -14,4 +14,4 @@ Here are some fancy badges representing tools i used/use/am learning:
 [![My Skills](https://skillicons.dev/icons?i=discord,docker,git,github,githubactions,linux,md,mongodb,mysql,postgres,powershell,prisma,py,qt,regex,rust,c,vscode&perline=8)](https://skillicons.dev)
 
 ## Stats
-![Metrics](/github-metrics.svg)
+
