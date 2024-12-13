@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="916" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="890" class="">
     <defs>
         <style/>
     </defs>
@@ -458,7 +458,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"/>
                             </svg>
-                            On 11 Dec 2024, 19:02:11
+                            On 11 Dec 2024, 19:02:19
                         </div>
                     </section>
                 </div>
@@ -468,20 +468,19 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            Update docs/api/messages.rst
+                            feat(client): implement new entitlement endpoint and parameter (#1250)
 
-Co-authored-by: vi &lt;8530778+shiftinv@users.noreply.github.com&gt;
 Signed-off-by: Snipy7374 &lt;100313469+Snipy7374@users.noreply.github.com&gt;
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"/>
                             </svg>
-                            <span class="code">d771282a</span>
-                            <span class="code">docs/api/messages.rst</span>
+                            <span class="code">d24e1de1</span>
+                            <span class="code">changelog/1113.feature.rst</span>
                             <span class="code">
-                                <span class="snippet additions">++2</span>
-                                <span class="snippet deletions">--2</span>
+                                <span class="snippet additions">++1</span>
+                                <span class="snippet deletions">--1</span>
                             </span>
                         </div>
                     </section>
@@ -489,14 +488,14 @@ Signed-off-by: Snipy7374 &lt;100313469+Snipy7374@users.noreply.github.com&gt;
                 <div class="row">
                     <section class="snippet">
                         <div class="body markdown">
-                            <code class="language-diff" xml:space="preserve"><span class="token coord">@@ -433,8 +433,8 @@</span><br /><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line"><br /></span><span class="token prefix unchanged">·</span><span class="token line">.. class:: MessageReferenceType<br /></span><span class="token prefix unchanged">·</span><span class="token line"><br /></span></span><span class="token deleted-sign deleted"><span class="token prefix deleted">-</span><span class="token line">   Specifies the type of :class:`MessageReference`. This is used to denote<br /></span><span class="token prefix deleted">-</span><span class="token line">   if a message is normal or not (e.g replying or forwarding).<br /></span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">   Specifies the type of :class:`MessageReference`. This can be used to determine<br /></span><span class="token prefix inserted">+</span><span class="token line">   if a message is e.g. a reply or a forwarded message.<br /></span></span><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line"><br /></span><span class="token prefix unchanged">·</span><span class="token line">   .. versionadded:: 2.10<br /></span><span class="token prefix unchanged">·</span></span></code>
+                            <code class="language-diff" xml:space="preserve"><span class="token coord">@@ -2,4 +2,4 @@</span><br /><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">- New types: :class:`SKU`, :class:`Entitlement`.<br /></span><span class="token prefix unchanged">·</span><span class="token line">- New :attr:`Interaction.entitlements` attribute, and :meth:`InteractionResponse.require_premium` response type.<br /></span><span class="token prefix unchanged">·</span><span class="token line">- New events: :func:`on_entitlement_create`, :func:`on_entitlement_update`, :func:`on_entitlement_delete`.<br /></span></span><span class="token deleted-sign deleted"><span class="token prefix deleted">-</span><span class="token line">- New :class:`Client` methods: :meth:`~Client.skus`, :meth:`~Client.entitlements`, :meth:`~Client.create_entitlement`.<br /></span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">- New :class:`Client` methods: :meth:`~Client.skus`, :meth:`~Client.entitlements`, :meth:`~Client.fetch_entitlement`, :meth:`~Client.create_entitlement`.</span></span></code>
                         </div>
                     </section>
                 </div>
             </section>
             <footer>
                 <span>These metrics do not include all private contributions</span>
-                <span>Last updated 13 Dec 2024, 06:11:31 (timezone Europe/Rome) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 13 Dec 2024, 07:15:46 (timezone Europe/Rome) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
