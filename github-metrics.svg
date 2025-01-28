@@ -477,7 +477,7 @@ Signed-off-by: Snipy7374 &lt;100313469+Snipy7374@users.noreply.github.com&gt;
                                 <path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"/>
                             </svg>
                             <span class="code">6cde3327</span>
-                            <span class="code">docs/api/index.rst</span>
+                            <span class="code">disnake/__init__.py</span>
                             <span class="code">
                                 <span class="snippet additions">++1</span>
                                 <span class="snippet deletions">--0</span>
@@ -488,14 +488,14 @@ Signed-off-by: Snipy7374 &lt;100313469+Snipy7374@users.noreply.github.com&gt;
                 <div class="row">
                     <section class="snippet">
                         <div class="body markdown">
-                            <code class="language-diff" xml:space="preserve"><span class="token coord">@@ -116,6 +116,7 @@</span><br /><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">permissions<br /></span><span class="token prefix unchanged">·</span><span class="token line">roles<br /></span><span class="token prefix unchanged">·</span><span class="token line">skus<br /></span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">subscriptions<br /></span></span><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">soundboard<br /></span><span class="token prefix unchanged">·</span><span class="token line">stage_instances<br /></span><span class="token prefix unchanged">·</span><span class="token line">stickers</span></span></code>
+                            <code class="language-diff" xml:space="preserve"><span class="token coord">@@ -66,6 +66,7 @@</span><br /><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">from .soundboard import *<br /></span><span class="token prefix unchanged">·</span><span class="token line">from .stage_instance import *<br /></span><span class="token prefix unchanged">·</span><span class="token line">from .sticker import *<br /></span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">from .subscription import *<br /></span></span><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">from .team import *<br /></span><span class="token prefix unchanged">·</span><span class="token line">from .template import *<br /></span><span class="token prefix unchanged">·</span><span class="token line">from .threads import *</span></span></code>
                         </div>
                     </section>
                 </div>
             </section>
             <footer>
                 <span>These metrics do not include all private contributions</span>
-                <span>Last updated 28 Jan 2025, 23:09:36 (timezone Europe/Rome) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 29 Jan 2025, 00:09:41 (timezone Europe/Rome) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
