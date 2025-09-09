@@ -291,7 +291,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"/>
                             </svg>
-                            On 8 Sept 2025, 16:48:54
+                            On 8 Sept 2025, 09:32:38
                         </div>
                     </section>
                 </div>
@@ -301,16 +301,20 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            mention that tertiary_color can be used only as holographic style
+                            feat(user): implement user nameplates and collectibles (#1303)
+
+Signed-off-by: Snipy7374 &lt;100313469+Snipy7374@users.noreply.github.com&gt;
+Co-authored-by: Victor &lt;67214928+Victorsitou@users.noreply.github.com&gt;
+Co-authored-by: vi &lt;8530778+shiftinv@users.noreply.github.com&gt;
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"/>
                             </svg>
-                            <span class="code">6916b7ac</span>
-                            <span class="code">disnake/role.py</span>
+                            <span class="code">98ca82c2</span>
+                            <span class="code">disnake/member.py</span>
                             <span class="code">
-                                <span class="snippet additions">++4</span>
+                                <span class="snippet additions">++2</span>
                                 <span class="snippet deletions">--0</span>
                             </span>
                         </div>
@@ -319,14 +323,14 @@
                 <div class="row">
                     <section class="snippet">
                         <div class="body markdown">
-                            <code class="language-diff" xml:space="preserve"><span class="token coord">@@ -564,6 +564,10 @@</span><br /><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">       tertiary_colour: Optional[Union[:class:`Colour`, :class:`int`]]<br /></span><span class="token prefix unchanged">·</span><span class="token line">           The new tertiary_colour to change to. (aliased to ``tertiary_color`` as well)<br /></span><span class="token prefix unchanged">·</span><span class="token line"><br /></span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">           .. note::<br /></span><span class="token prefix inserted">+</span><span class="token line">               When passing this the only permitted values are the ones returned by<br /></span><span class="token prefix inserted">+</span><span class="token line">               :meth:`Colour.holographic_style`, any other color value will get rejected.<br /></span><span class="token prefix inserted">+</span><span class="token line"><br /></span></span><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">           .. versionadded:: 2.11<br /></span><span class="token prefix unchanged">·</span><span class="token line">       hoist: :class:`bool`<br /></span><span class="token prefix unchanged">·</span><span class="token line">           Indicates if the role should be shown separately in the member list.</span></span></code>
+                            <code class="language-diff" xml:space="preserve"><span class="token coord">@@ -63,6 +63,7 @@</span><br /><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">       GuildVoiceState as GuildVoiceStatePayload,<br /></span><span class="token prefix unchanged">·</span><span class="token line">       VoiceState as VoiceStatePayload,<br /></span><span class="token prefix unchanged">·</span><span class="token line">   )<br /></span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">   from .user import Collectibles<br /></span></span><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line"><br /></span><span class="token prefix unchanged">·</span><span class="token line">   VocalGuildChannel = Union[VoiceChannel, StageChannel]<br /></span><span class="token prefix unchanged">·</span><span class="token line"><br /></span></span>@@ -295,6 +296,7 @@ class Member(disnake.abc.Messageable, _UserTag):<br /><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">       banner: Optional[Asset]<br /></span><span class="token prefix unchanged">·</span><span class="token line">       accent_color: Optional[Colour]<br /></span><span class="token prefix unchanged">·</span><span class="token line">       accent_colour: Optional[Colour]<br /></span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">       collectibles: Collectibles<br /></span></span><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line"><br /></span><span class="token prefix unchanged">·</span><span class="token line">   @overload<br /></span><span class="token prefix unchanged">·</span><span class="token line">   def __init__(</span></span></code>
                         </div>
                     </section>
                 </div>
             </section>
             <footer>
                 <span>These metrics do not include all private contributions</span>
-                <span>Last updated 9 Sept 2025, 22:12:24 (timezone Europe/Rome) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 9 Sept 2025, 23:09:31 (timezone Europe/Rome) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
